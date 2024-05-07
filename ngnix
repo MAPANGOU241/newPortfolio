@@ -1,17 +1,8 @@
-server{
-listen 80 default_server;
-listen [::]:80 default_server;
-server_name example.com www.example.com
-
-root /usr/share/nginx/html;
- 
-index index.php index.html index.htm; 
-location / {
-        proxy_pass http://localhost:3000;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
+define('AUTH_KEY',         'dubGF_z|iY4G$,{D*XfkRjW4k;9,wf/#^r/2vjm+zh_UH|h]u7)n.Xc>6|;Qro=;');
+define('SECURE_AUTH_KEY',  'rR)oDS~eN5HkGD[Q|Y{_Nm7E~#h1XP7Qt Y`i{;+#}Xx9nY@Ip?vE<1Xd`Mdw.}I');
+define('LOGGED_IN_KEY',    '--F+U,zB5L={zo=mUNkk80[%Ze2X2#%BTRJz?6J8ZE|-4TI$?-?gRC+-,+OI^}F+');
+define('NONCE_KEY',        'F|2BMk2iK=d|WDOCgXHn-kaJZiiV9]f(jHs7_@4+sj|PzXJ}P$nyUIu-aAGRKPC@');
+define('AUTH_SALT',        '$/6|0vpT ^O6Ej=(j+rK(!K&%5+lDn[1C}A2x^+aX#;/mS00s^d;~UuG[AnqP@7K');
+define('SECURE_AUTH_SALT', '?Zj`H$Zx3M,YU-a@.MXDX=IzYLp`Vm@}ujRFi<Jpe1qZ%P=z{eyq];C jrD40L-z');
+define('LOGGED_IN_SALT',   '3Ji>J);>$i=xM+f]At1|hmW((`~WM|[AJ:p+Y+z5<L,*!Gj3b^dSaMk[<Po+PA5y');
+define('NONCE_SALT',       'GB*}:^-fh{s&hCLQ#kPuDR+PJ!4a49*Js 8j_B9sa6+[o8S[G.-/kCP1a,[/-ZdR');
