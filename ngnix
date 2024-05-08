@@ -6,3 +6,24 @@ define('AUTH_SALT',        '$/6|0vpT ^O6Ej=(j+rK(!K&%5+lDn[1C}A2x^+aX#;/mS00s^d;
 define('SECURE_AUTH_SALT', '?Zj`H$Zx3M,YU-a@.MXDX=IzYLp`Vm@}ujRFi<Jpe1qZ%P=z{eyq];C jrD40L-z');
 define('LOGGED_IN_SALT',   '3Ji>J);>$i=xM+f]At1|hmW((`~WM|[AJ:p+Y+z5<L,*!Gj3b^dSaMk[<Po+PA5y');
 define('NONCE_SALT',       'GB*}:^-fh{s&hCLQ#kPuDR+PJ!4a49*Js 8j_B9sa6+[o8S[G.-/kCP1a,[/-ZdR');
+
+
+sudo apt update
+sudo apt install apache2 \
+    ghostscript \
+    libapache2-mod-php \
+    mysql-server \
+    php \
+    php-bcmath \
+    php-curl \
+    php-imagick \
+    php-intl \
+    php-json \
+    php-mbstring \
+    php-mysql \
+    php-xml \
+    php-zip
+
+
+
+
